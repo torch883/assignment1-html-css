@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 4 - Table and Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navigation">
+  <a href="../task1/index.html">Task 1</a>
+  <a href="../task2/index.html">Task 2</a>
+  <a href="../task3/exercise1/index.html">Task 3</a>
+  <a href="index.html">Task 4</a>
+</nav>
+
+<main class="content">
+
+  <h1 id="grades-heading">HTML and CSS Course Grades</h1>
+
+  <table class="grades-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Arushann Satbayeva</td>
+        <td>HTML and CSS Basics</td>
+        <td>95</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Daniyar Akhmetov</td>
+        <td>HTML and CSS Basics</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Madina Erzhanova</td>
+        <td>HTML and CSS Basics</td>
+        <td>88</td>
+      </tr>
+      <tr>
+        <td>Yerzhan Tulegenov</td>
+        <td>HTML and CSS Basics</td>
+        <td>76</td>
+      </tr>
+      <tr>
+        <td colspan="2">Group Average</td>
+        <td>89.8</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="section-title">Feedback Form</h2>
+
+  <form class="feedback-form" id="feedback-form" action="#" method="post">
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-row">
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <span class="form-label">Did you like the assignment?</span>
+      <div class="radio-group">
+        <label><input type="radio" name="liked" value="yes" checked> Yes</label>
+        <label><input type="radio" name="liked" value="no"> No</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="comments">Comment</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback"></textarea>
+    </div>
+
+    <button type="submit" class="submit-button">Send Feedback</button>
+  </form>
+
+</main>
+
+<footer class="footer">
+  Assignment 1 - Task 4
+</footer>
+
+</body>
+</html>

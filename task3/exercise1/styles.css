@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #eef2f7;
+    color: #263238;
+}
+
+.navigation {
+  background: aliceblue;
+  padding: 12px 24px;
+}
+
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  margin: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  border-radius: 4px;
+  background: navy;
+}
+
+.navigation a:hover {
+  background: teal;
+}
+
+.tribute-header {
+    padding: 28px;
+    text-align: center;
+    background: #234e70;
+    color: white;
+    border-bottom: 4px solid #f4a261;
+}
+
+.tribute-header h1{
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+  margin: 0 0 4px;
+}
+
+.tribute-header h2{
+  font-weight: 500;
+  color: gold;
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+#profile {
+  display: flex;
+  width: auto;
+  margin: 24px auto;
+  gap: 22px;
+  align-items:center;
+  background:#fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(16,24,32,0.08);
+}
+
+.profile-card_photo {
+  max-width: 160px;
+  width:90%;
+  border-radius: 50%;
+  border: 3px solid gold; 
+  box-shadow: 0 12px 12px rgba(16,24,32,0.08);
+}
+
+.profile-card_description {
+  color: #27221F;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section-title {
+  font-size:1.35rem;
+  margin: 34px auto 16px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom:8px;
+}
+
+.list {
+  margin-bottom: 32px;
+  padding-left: 24px;
+}
+
+ol.list {
+  list-style-type: decimal;
+}
+
+ul.list {
+  list-style-type: square;
+}
+
+.list li {
+  margin-bottom: 14px;
+  padding-left: 8px;
+  line-height: 1.5;
+}
+
+.list strong {
+  color: #234e70;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1rem;
+  color: teal;
+}
+
+.links-row {
+  margin-top: 28px;
+  display:flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.links-row a {
+  color: teal;
+  text-decoration:none;
+  border-bottom: 1px solid transparent;
+  margin-right: 16px;
+  transition: border-color .15s ease;
+}
+
+.links-row a:hover{
+  border-bottom-color: gold;
+}
+
+.btn {
+  background: navy;
+  color:#fff !important;
+  padding: 9px 18px;
+  border-radius: 4px;
+  border-bottom: none !important;
+  transition: background .15s ease;
+}
+
+.btn:hover {
+  background: teal;
+}
+
+@media (max-width: 600px) {
+  #profile {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-card_photo {
+    width: 160px;
+    margin-bottom: 16px;
+  }
+}

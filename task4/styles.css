@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #263238;
+}
+
+.navigation {
+  padding: 12px 24px;
+  background: aliceblue;
+  text-align: left;
+  border-bottom: 4px solid #234e70;
+}
+
+.navigation a {
+  display: inline-block;
+  margin: 4px;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  background: navy;
+  border-radius: 4px;
+}
+
+.navigation a:hover {
+  background: teal;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 30px 24px 50px;
+}
+
+#grades-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+.grades-table th {
+  color: white;
+  background: navy;
+}
+
+.grades-table tr:nth-child(even) {
+  background: #f3f0e6;
+}
+
+.grades-table .highlight-row {
+  background: #fdecc8;
+}
+
+.section-title {
+  margin-top: 40px;
+  text-align: center;
+  border-bottom: 2px solid #999;
+  padding-bottom: 8px;
+}
+
+.feedback-form {
+  width: 460px;
+  max-width: 100%;
+  margin: 24px auto 0;
+  padding: 24px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.form-row label,
+.form-label {
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px;
+  font: inherit;
+  border: 1px solid #999;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+.radio-group input {
+  width: auto;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  color: white;
+  background: navy;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: teal;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background: #234e70;
+}
+
+@media (max-width: 600px) {
+  .grades-table {
+    font-size: 14px;
+  }
+}
